@@ -12,7 +12,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -25,10 +24,6 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
@@ -36,20 +31,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import edu.ws2025.a01.time_table_app.Component.AddTaskListItem
 import edu.ws2025.a01.time_table_app.Component.DropDown
 import edu.ws2025.a01.time_table_app.Component.SubjectIcon
 import edu.ws2025.a01.time_table_app.Room.SubjectEntity
-import edu.ws2025.a01.time_table_app.Room.TaskEntity
 import edu.ws2025.a01.time_table_app.ViewModel.AddDataViewModel
-import edu.ws2025.a01.time_table_app.data.TaskData
 import edu.ws2025.a01.time_table_app.data.subjectList
 import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
+//データ追加画面用Composable関数
 @Composable
 fun AddDataPage(
     modifier: Modifier = Modifier, targetDate: LocalDate,

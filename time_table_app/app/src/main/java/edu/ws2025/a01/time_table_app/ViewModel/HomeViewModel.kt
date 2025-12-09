@@ -23,6 +23,7 @@ import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
+//HomePage用ViewModel
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     private val repository: TimetableRepository

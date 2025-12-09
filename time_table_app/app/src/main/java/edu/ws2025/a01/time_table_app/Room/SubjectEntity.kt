@@ -4,6 +4,7 @@ import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 
+//教科データのテーブル用データクラス
 @Entity(tableName = "subjects",
         indices = [
             Index(value = ["date","period"], unique = true)

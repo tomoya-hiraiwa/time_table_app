@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 
+//時間帯ドロップダウン用コンポーネント
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DropDown(

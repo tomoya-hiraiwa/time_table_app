@@ -9,6 +9,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 
+//タスクの左側に表示するドット
 @Composable
 fun CircleDot(modifier: Modifier = Modifier, color: Color) {
     Canvas(modifier = modifier) {

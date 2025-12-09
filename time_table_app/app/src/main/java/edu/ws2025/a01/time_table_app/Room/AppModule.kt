@@ -8,6 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import jakarta.inject.Singleton
 
+//データベース作成用コード
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {

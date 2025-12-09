@@ -13,6 +13,7 @@ import edu.ws2025.a01.time_table_app.ui.theme.sugakuColor
 import edu.ws2025.a01.time_table_app.ui.theme.syakaiColor
 import edu.ws2025.a01.time_table_app.ui.theme.taiikuColor
 
+//教科の一覧リスト
 val subjectList = listOf<SubjectData>(
     SubjectData(
         "国語",

@@ -11,6 +11,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
+
+//AddDataPage用ViewModel
 @HiltViewModel
 class AddDataViewModel @Inject constructor(
     private val repository: TimetableRepository

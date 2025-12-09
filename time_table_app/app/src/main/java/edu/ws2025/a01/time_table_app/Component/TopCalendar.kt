@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 import edu.ws2025.a01.time_table_app.data.CalendarDay
 import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 
-
+//一ヶ月分の日付を表示する横スクロールカレンダー
 @Composable
 fun TopCalendar(
     modifier: Modifier = Modifier,
@@ -46,7 +46,7 @@ fun TopCalendar(
     }
 }
 
-
+//上記カレンダーの日付1日分のアイテム
 @Composable
 fun TopCalendarItem(
     modifier: Modifier = Modifier,

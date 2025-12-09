@@ -44,6 +44,7 @@ import java.time.Instant
 import java.time.LocalDate
 import java.time.Period
 
+//初期画面用Composable関数
 @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
 @Composable
 fun HomePage(
@@ -77,10 +78,11 @@ fun HomePage(
                 modifier = Modifier.padding(8.dp)
             )
         }
+        //1ヶ月分の日付表示カレンダー
         TopCalendar(calendarDayList = monthCalendar) {
             viewModel.selectTargetDate(it)
-            println(subjectWithTaskList)
         }
+        //選択した日付を表示するヘッダー
         DateHeader(
             dateText = targetDateText
         ) {
@@ -93,12 +95,14 @@ fun HomePage(
                 .weight(1f)
                 .verticalScroll(state = rememberScrollState())
         ) {
+            //対応するデータが存在する場合
             if (subjectWithTaskList.isNotEmpty()) {
                 subjectWithTaskList.forEach {
                     SubjectGroup(subjectTaskData = it) {
                         viewModel.onTaskDoneChanged(taskData = it)
                     }
                 }
+            //対応するデータが存在しない場合
             } else {
                 Text(
                     "データなし",
@@ -112,6 +116,7 @@ fun HomePage(
 
     }
     if (showDatePicker) {
+        //日付選択用DatePickerDialog
         TargetDatePickerDialog(onDismiss = { showDatePicker = false }) {
             viewModel.selectedDate(it ?: Instant.now().toEpochMilli())
             showDatePicker = false
@@ -119,6 +124,7 @@ fun HomePage(
     }
 }
 
+//各時間の教科表示リストアイテム
 @Composable
 fun SubjectGroup(
     modifier: Modifier = Modifier,

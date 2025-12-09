@@ -25,6 +25,7 @@ import dagger.hilt.android.HiltAndroidApp
 import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 import java.time.LocalDate
 
+//Hilt依存関係注入用
 @HiltAndroidApp
 class MyApplication : Application()
 
@@ -42,12 +43,16 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+//アプリ画面全体用Composable関数
 @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
 @Composable
 fun App(modifier: Modifier = Modifier) {
+    //画面を切り替えるためのコントローラ
     val navController = rememberNavController()
     val insets = WindowInsets.safeDrawing.asPaddingValues()
     var targetDate = LocalDate.now()
+    //全体の画面遷移用のNavHost
     NavHost(
         navController = navController, startDestination = "HomePage",
         modifier = Modifier.padding(
@@ -55,12 +60,14 @@ fun App(modifier: Modifier = Modifier) {
             bottom = insets.calculateBottomPadding()
         )
     ) {
+        //初期ページ
         composable("HomePage") {
             HomePage() {
                 targetDate = it
                 navController.navigate("AddDataPage")
             }
         }
+        //データ追加ページ
         composable("AddDataPage") {
             AddDataPage(targetDate = targetDate) {
                 navController.popBackStack()

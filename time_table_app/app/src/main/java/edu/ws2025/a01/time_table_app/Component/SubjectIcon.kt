@@ -17,6 +17,7 @@ import edu.ws2025.a01.time_table_app.data.SubjectData
 import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 import edu.ws2025.a01.time_table_app.ui.theme.kokugoColor
 
+//データ追加ページの教科選択アイテム
 @Composable
 fun SubjectIcon(
     modifier: Modifier = Modifier,

@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 
+//選択された日付のヘッダー
 @Composable
 fun DateHeader(modifier: Modifier = Modifier,
                 dateText: String,

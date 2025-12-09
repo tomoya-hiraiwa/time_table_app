@@ -5,6 +5,7 @@ import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
 
+//タスクデータのテーブル用データクラス
 @Entity(
     tableName = "tasks",
     foreignKeys = [

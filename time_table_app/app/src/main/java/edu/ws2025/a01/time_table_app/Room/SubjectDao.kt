@@ -8,7 +8,7 @@ import androidx.room.Query
 import androidx.room.Transaction
 import kotlinx.coroutines.flow.Flow
 
-
+//Database Access Object(データベースへのリクエストクエリを集めたもの)
 @Dao
 interface SubjectDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)

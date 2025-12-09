@@ -6,6 +6,7 @@ import kotlinx.coroutines.flow.Flow
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
+//DAOとViewModelのアクセスを中継するクラス
 class TimetableRepository @Inject constructor(
     private val dao: SubjectDao
 ){
