@@ -24,6 +24,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
@@ -49,7 +50,7 @@ fun AddDataPage(
     onPageBack: () -> Unit
 ) {
     val periodList = List(6) { it + 1 }
-    val targetDateText = targetDate.format(DateTimeFormatter.ofPattern("yyyy/M/d (EEE)"))
+    val targetDateText = remember{targetDate.format(DateTimeFormatter.ofPattern("yyyy/M/d (EEE)"))}
     val selectedSubject by viewModel.selectedSubject.collectAsStateWithLifecycle()
     val selectedPeriod by viewModel.selectedPeriod.collectAsStateWithLifecycle()
     val taskList by viewModel.taskList.collectAsStateWithLifecycle()

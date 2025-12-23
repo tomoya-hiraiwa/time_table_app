@@ -70,7 +70,7 @@ fun App(modifier: Modifier = Modifier) {
         //データ追加ページ
         composable("AddDataPage") {
             AddDataPage(targetDate = targetDate) {
-                navController.popBackStack()
+                navController.navigate("HomePage")
             }
         }
     }
