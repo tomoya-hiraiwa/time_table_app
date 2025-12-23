@@ -31,7 +31,7 @@ class MyApplication : Application()
 
 @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
 @AndroidEntryPoint
-//TODO 1.アプリ起動とActivity
+//TODO 2.アプリ起動とActivity
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,16 +55,17 @@ fun App(modifier: Modifier = Modifier) {
     var targetDate = LocalDate.now()
     //全体の画面遷移用のNavHost
     NavHost(
-        navController = navController, startDestination = "HomePage",
+        navController = navController,
+        //最初のページ名
+        startDestination = "HomePage",
         modifier = Modifier.padding(
             top = insets.calculateTopPadding(),
             bottom = insets.calculateBottomPadding()
         )
     ) {
-        //TODO 2.画面用Composableの登録
-        //初期ページ
+        //TODO 3.画面用Composableの登録
 
-        //データ追加ページ
+        //TODO 8.navControllerの使用
 
     }
 }

@@ -2,12 +2,8 @@ package edu.ws2025.a01.time_table_app.data
 
 import androidx.compose.ui.graphics.Color
 import java.time.DayOfWeek
-
+//TODO 5.データクラスの作成
 //教科名とテーマカラーをまとめたデータクラス　
-data class SubjectData(
-    val subject: String,
-    val color: Color
-)
 
 //カレンダーの日付と曜日をまとめたデータクラス
 data class CalendarDay(

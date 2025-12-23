@@ -29,7 +29,7 @@ import edu.ws2025.a01.time_table_app.ui.theme.Time_table_appTheme
 fun DateHeader(modifier: Modifier = Modifier,
                 dateText: String,
                 onAddClick: () -> Unit) {
- //TODO 6. DateHeaderのUI作成
+ //TODO 7.DateHeaderのUI作成
 }
 
 

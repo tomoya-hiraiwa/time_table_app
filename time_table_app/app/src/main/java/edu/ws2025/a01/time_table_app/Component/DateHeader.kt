@@ -64,5 +64,4 @@ private fun DateHeaderPreview() {
     Time_table_appTheme {
         DateHeader(dateText = "2026/1/1 (Sun)"){}
     }
-
 }

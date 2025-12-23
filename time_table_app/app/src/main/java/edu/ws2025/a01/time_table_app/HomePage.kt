@@ -121,6 +121,7 @@ fun HomePage(
             viewModel.selectedDate(it ?: Instant.now().toEpochMilli())
             showDatePicker = false
         }
+
     }
 }
 

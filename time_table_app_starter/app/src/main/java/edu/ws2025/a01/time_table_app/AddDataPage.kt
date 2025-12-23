@@ -75,7 +75,7 @@ fun AddDataPage(
                     .fillMaxWidth()
                     .weight(1f)
             )
-            //TODO 12.データの追加とApp Inspectionの確認
+            //TODO 11.データの追加とApp Inspectionの確認
             TextButton({
                 viewModel.addTask(
                     subject = SubjectEntity(
@@ -105,7 +105,7 @@ fun AddDataPage(
                 .align(Alignment.Start)
                 .padding(vertical = 8.dp)
         )
-        //TODO 8.教科選択グリッドリストの作成
+        //TODO 9.教科選択グリッドリストの作成
 
         Row(
             modifier = Modifier.padding(top = 24.dp),

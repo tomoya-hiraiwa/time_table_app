@@ -11,7 +11,7 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 
-//TODO 3.各教科の色の設定
+//TODO 4.各教科の色の設定
 //各教科のテーマカラー
 //val kokugoColor = Color(0xffff7272)
 //val sugakuColor = Color(0xff00b1ff)
