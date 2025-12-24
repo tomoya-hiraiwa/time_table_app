@@ -69,7 +69,7 @@ fun TopCalendarItem(
         Text(
             data.date,
             style = MaterialTheme.typography.titleMedium,
-            color = if (data.dayOfWeek == "Sun"|| data.dayOfWeek == "日") Color.Red else Color.Black
+            color = if (data.dayOfWeek == "Sun" || data.dayOfWeek == "日") Color.Red else Color.Black
         )
     }
 }

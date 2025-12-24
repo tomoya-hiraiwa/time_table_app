@@ -79,6 +79,8 @@ fun AddDataPage(
                     .fillMaxWidth()
                     .weight(1f)
             )
+
+            //TODO 7.データベースを確認してみよう
             TextButton({
                 viewModel.addTask(
                     subject = SubjectEntity(
